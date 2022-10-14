@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.song.mybatisX.mapper.VslvoyageMapper">
+
+    <resultMap id="BaseResultMap" type="com.song.mybatisX.pojo.Vslvoyage">
+            <id property="gkey" column="GKEY" jdbcType="VARCHAR"/>
+            <result property="visitGkey" column="VISIT_GKEY" jdbcType="VARCHAR"/>
+            <result property="voyageNbr" column="VOYAGE_NBR" jdbcType="VARCHAR"/>
+            <result property="impExpId" column="IMP_EXP_ID" jdbcType="VARCHAR"/>
+            <result property="cargoWgt" column="CARGO_WGT" jdbcType="DECIMAL"/>
+            <result property="createTime" column="CREATE_TIME" jdbcType="TIMESTAMP"/>
+            <result property="createBy" column="CREATE_BY" jdbcType="VARCHAR"/>
+            <result property="delFlag" column="DEL_FLAG" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        GKEY,VISIT_GKEY,VOYAGE_NBR,
+        IMP_EXP_ID,CARGO_WGT,CREATE_TIME,
+        CREATE_BY,DEL_FLAG
+    </sql>
+
+
+</mapper>
